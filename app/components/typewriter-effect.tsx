@@ -73,7 +73,7 @@ export default function TypewriterEffect({
           <div className="w-3 h-3 rounded-full bg-yellow-500"></div>
           <div className="w-3 h-3 rounded-full bg-green-500"></div>
         </div>
-        <div className="text-gray-400 text-xs">developer-role.ts</div>
+        <div className="text-gray-400 text-xs">{`developer-role.ts`}</div>
         <div></div>
       </div>
 
@@ -91,7 +91,7 @@ export default function TypewriterEffect({
 
           {/* Code content */}
           <div className="flex-1">
-            <div className="text-gray-400">// Developer role definition</div>
+            <div className="text-gray-400">{`// Developer role definition`}</div>
             <div className="flex items-center">
               <span className="text-[#569cd6]">const</span>
               <span className="text-white mx-2">role</span>
