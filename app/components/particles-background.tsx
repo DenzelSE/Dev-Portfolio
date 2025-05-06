@@ -14,7 +14,7 @@ export default function ParticlesBackground({ className = "", variant = "default
   const particlesInit = useCallback(async (engine: Engine) => {
     console.log(variant)
     await loadSlim(engine)
-  }, [])
+  }, [variant])
 
   const particlesLoaded = useCallback(async (container: Container | undefined) => {
     await console.log(container)

@@ -1,6 +1,7 @@
 "use client"
 
 import { motion } from "framer-motion"
+import Image from 'next/image';
 import { useEffect, useState } from "react"
 import { Github, Linkedin, Mail, Download } from "lucide-react"
 import Link from "next/link"
@@ -157,7 +158,7 @@ export default function Hero() {
             <div className="absolute inset-0 backdrop-blur-3xl "></div>
             <div className="absolute inset-0 flex items-center justify-center">
               {/* <div className="w-[80%] h-[80%] rounded-full overflow-hidden border-4 border-blue-500/30"> */}
-                <img
+                <Image
                   src="/Denzel_Hero_bgremoved.png"
                   alt="Code editor with programming text"
                   className="w-full h-full object-cover"
