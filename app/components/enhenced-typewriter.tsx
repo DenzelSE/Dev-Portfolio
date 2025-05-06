@@ -78,7 +78,7 @@ export default function EnhancedTypewriter({
 
        
         <div className="flex-1">
-          <div className="text-gray-400">// Developer specialization</div>
+          <div className="text-gray-400">{`// Developer specialization`}</div>
           <div className="flex flex-wrap items-center">
             <span className="text-[#569cd6]">const</span>
             <span className="text-white mx-2">developer</span>

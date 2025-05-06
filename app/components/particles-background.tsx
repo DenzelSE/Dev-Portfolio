@@ -12,6 +12,7 @@ interface ParticlesBackgroundProps {
 
 export default function ParticlesBackground({ className = "", variant = "default" }: ParticlesBackgroundProps) {
   const particlesInit = useCallback(async (engine: Engine) => {
+    console.log(variant)
     await loadSlim(engine)
   }, [])
 
