@@ -80,20 +80,20 @@ export default function EnhancedTypewriter({
         <div className="flex-1">
           <div className="text-gray-400">{`// Developer specialization`}</div>
           <div className="flex flex-wrap items-center">
-            <span className="text-[#569cd6]">const</span>
-            <span className="text-white mx-2">developer</span>
+            <span className="text-[#569cd6]">{`const`}</span>
+            <span className="text-white mx-2">{`developer`}</span>
             <span className="text-[#d4d4d4]">=</span>
             <span className="text-[#d4d4d4] mx-2">{"{"}</span>
           </div>
           <div className="flex flex-wrap items-center ml-4">
-            <span className="text-[#9cdcfe]">name</span>
-            <span className="text-[#d4d4d4]">:</span>
-            <span className="text-[#ce9178] mx-2">&quot;Denzel Selokela&quot;</span>
-            <span className="text-[#d4d4d4]">,</span>
+            <span className="text-[#9cdcfe]">{`name`}</span>
+            <span className="text-[#d4d4d4]">{`:`}</span>
+            <span className="text-[#ce9178] mx-2">&quot;{`Denzel Selokela`}&quot;</span>
+            <span className="text-[#d4d4d4]">{`,`}</span>
           </div>
           <div className="flex flex-wrap items-center ml-4">
             <span className="text-[#9cdcfe]">role</span>
-            <span className="text-[#d4d4d4]">:</span>
+            <span className="text-[#d4d4d4]">{`:`}</span>
             <span className="text-[#ce9178] mx-2">&quot;{currentText}&quot;</span>
             <span className={`w-2 h-5 bg-white ml-1 ${cursorVisible ? "opacity-100" : "opacity-0"}`}></span>
           </div>

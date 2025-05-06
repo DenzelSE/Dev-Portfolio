@@ -22,7 +22,7 @@ export default function Hero() {
   }
 
   return (
-    <section id="home" className="relative min-h-screen pt-32 pb-20 md:pt-40 md:pb-12 overflow-hidden">
+    <section id="home" className="relative min-h-screen pt-32 pb-20 md:pt-40 md:pb-2 overflow-hidden">
       {/* Particle background */}
       <ParticlesBackground variant="connect" />
 
