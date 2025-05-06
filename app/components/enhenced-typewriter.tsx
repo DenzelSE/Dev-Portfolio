@@ -89,7 +89,7 @@ export default function EnhancedTypewriter({
           <div className="flex flex-wrap items-center ml-4">
             <span className="text-[#9cdcfe]">name</span>
             <span className="text-[#d4d4d4]">:</span>
-            <span className="text-[#ce9178] mx-2">&quot;Alex Morgan&quot;</span>
+            <span className="text-[#ce9178] mx-2">&quot;Denzel Selokela&quot;</span>
             <span className="text-[#d4d4d4]">,</span>
           </div>
           <div className="flex flex-wrap items-center ml-4">

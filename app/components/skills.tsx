@@ -39,12 +39,12 @@ export default function Skills() {
   const skills: Skill[] = [
     { name: "JavaScript / TypeScript", percentage: 90 },
     { name: "React / Next.js", percentage: 85 },
-    { name: "Node.js / Express", percentage: 80 },
-    { name: "HTML / CSS / Tailwind", percentage: 95 },
-    { name: "MongoDB / PostgreSQL", percentage: 75 },
+    { name: "Java / SpringBoot", percentage: 80 },
+    { name: "Docker", percentage: 80 },
+    { name: "Python", percentage: 80 },
   ]
 
-  const techStack = ["JavaScript", "TypeScript", "React", "Node.js", "HTML5", "CSS3", "Tailwind", "Git", "MongoDB"]
+  const techStack = ["JavaScript", "TypeScript", "NEXTjs", "Java", "SpringBoot", "Python", "Tailwind", "Git", "Solidity"]
 
   return (
     <section id="skills" className="relative py-20 overflow-hidden">

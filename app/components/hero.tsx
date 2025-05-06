@@ -22,7 +22,7 @@ export default function Hero() {
   }
 
   return (
-    <section id="home" className="relative min-h-screen pt-32 pb-20 md:pt-40 md:pb-32 overflow-hidden">
+    <section id="home" className="relative min-h-screen pt-32 pb-20 md:pt-40 md:pb-12 overflow-hidden">
       {/* Particle background */}
       <ParticlesBackground variant="connect" />
 
@@ -53,7 +53,7 @@ export default function Hero() {
             transition={{ duration: 0.5, delay: 0.2 }}
             className="text-5xl md:text-6xl font-bold text-white mb-4"
           >
-            Alex Morgan
+            Denzel Selokela
           </motion.h1>
 
           <motion.div
@@ -78,8 +78,7 @@ export default function Hero() {
           >
             <span className="text-xl font-medium leading-relaxed relative">
               <span className="relative z-10 text-transparent bg-clip-text bg-gradient-to-r from-blue-400 via-blue-100 to-blue-500 animate-pulse">
-                Crafting elegant digital solutions with clean code and innovative design. Specializing in scalable web
-                applications that deliver exceptional user experiences.
+              Building robust and scalable applications with modern technologies. Passionate about clean code and innovative solutions. Making an impact and growth in the industry.
               </span>
               <span className="absolute inset-0 blur-sm bg-gradient-to-r from-blue-400/20 via-blue-100/20 to-blue-500/20 animate-pulse"></span>
             </span>
@@ -154,16 +153,16 @@ export default function Hero() {
           transition={{ duration: 0.8, delay: 0.3 }}
           className="md:w-1/2 mt-12 md:mt-0 flex justify-center relative"
         >
-          <div className="relative w-[300px] h-[300px] md:w-[400px] md:h-[400px] rounded-full overflow-hidden">
-            <div className="absolute inset-0 bg-blue-600/20 backdrop-blur-3xl rounded-full"></div>
+          <div className="relative w-[300px] h-[300px] md:w-[400px] md:h-[500px] overflow-hidden">
+            <div className="absolute inset-0 backdrop-blur-3xl "></div>
             <div className="absolute inset-0 flex items-center justify-center">
-              <div className="w-[80%] h-[80%] rounded-full overflow-hidden border-4 border-blue-500/30">
+              {/* <div className="w-[80%] h-[80%] rounded-full overflow-hidden border-4 border-blue-500/30"> */}
                 <img
-                  src="/placeholder.svg?height=400&width=400"
+                  src="/Denzel_Hero_bgremoved.png"
                   alt="Code editor with programming text"
                   className="w-full h-full object-cover"
                 />
-              </div>
+              {/* </div> */}
             </div>
 
             {/* Animated rings */}
