@@ -6,7 +6,7 @@ import { Github, Linkedin, Mail, Download } from "lucide-react"
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import ParticlesBackground from "./particles-background"
-import EnhancedTypewriter from "./enhanced-typewriter"
+import EnhancedTypewriter from "./enhenced-typewriter"
 import AnimatedCodeBackground from "./animated-code-background"
 import BackgroundPattern from "./background-patterns"
 
@@ -74,10 +74,15 @@ export default function Hero() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.4 }}
-            className="text-gray-400 mb-8 max-w-lg"
+            className="text-gray-400 mb-8 max-w-lg font-serif"
           >
-            I build exceptional and accessible digital experiences for the web. Passionate about creating solutions that
-            are both beautiful and functional.
+            <span className="text-xl font-medium leading-relaxed relative">
+              <span className="relative z-10 text-transparent bg-clip-text bg-gradient-to-r from-blue-400 via-blue-100 to-blue-500 animate-pulse">
+                Crafting elegant digital solutions with clean code and innovative design. Specializing in scalable web
+                applications that deliver exceptional user experiences.
+              </span>
+              <span className="absolute inset-0 blur-sm bg-gradient-to-r from-blue-400/20 via-blue-100/20 to-blue-500/20 animate-pulse"></span>
+            </span>
           </motion.p>
 
           <motion.div
