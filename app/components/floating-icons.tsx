@@ -31,6 +31,7 @@ export default function FloatingIcons({ count = 15, className = "" }: FloatingIc
 
     const generatedIcons = Array.from({ length: count }).map((_, i) => {
       const Icon = iconComponents[Math.floor(Math.random() * iconComponents.length)]
+      console.log(_, i)
       return Icon
     })
 

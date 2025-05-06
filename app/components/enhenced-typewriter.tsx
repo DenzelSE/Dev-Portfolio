@@ -22,7 +22,7 @@ export default function EnhancedTypewriter({
   const [cursorVisible, setCursorVisible] = useState(true)
   const [lineNumber, setLineNumber] = useState(1)
 
-  // Blinking cursor effect
+  
   useEffect(() => {
     const cursorInterval = setInterval(() => {
       setCursorVisible((prev) => !prev)
@@ -31,27 +31,26 @@ export default function EnhancedTypewriter({
     return () => clearInterval(cursorInterval)
   }, [])
 
-  // Typing effect
+  
   useEffect(() => {
     const word = words[currentWordIndex]
 
     const timeout = setTimeout(
       () => {
         if (!isDeleting) {
-          // Typing
+          
           setCurrentText(word.substring(0, currentText.length + 1))
 
-          // If word is complete, start deleting after delay
+          
           if (currentText.length === word.length) {
             setTimeout(() => {
               setIsDeleting(true)
             }, delayBetweenWords)
           }
         } else {
-          // Deleting
           setCurrentText(word.substring(0, currentText.length - 1))
 
-          // If deletion is complete, move to next word
+          
           if (currentText.length === 0) {
             setIsDeleting(false)
             setCurrentWordIndex((prev) => (prev + 1) % words.length)
@@ -68,7 +67,7 @@ export default function EnhancedTypewriter({
   return (
     <CodeEditorFrame title="developer-role.ts">
       <div className="flex">
-        {/* Line numbers */}
+        
         <div className="text-gray-500 mr-4 select-none text-right w-8">
           <div>1</div>
           <div className={lineNumber === 2 ? "text-gray-300" : ""}>2</div>
@@ -77,7 +76,7 @@ export default function EnhancedTypewriter({
           <div className={lineNumber === 5 ? "text-gray-300" : ""}>5</div>
         </div>
 
-        {/* Code content */}
+       
         <div className="flex-1">
           <div className="text-gray-400">// Developer specialization</div>
           <div className="flex flex-wrap items-center">
